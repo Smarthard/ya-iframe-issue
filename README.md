@@ -1,27 +1,15 @@
-# YaIframeIssue
+# Демонстрация проблемы Яндекс.Браузера с iframe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+Проект был сгенерирован с помощью [Angular CLI](https://github.com/angular/angular-cli) 9.1.5.
 
-## Development server
+## Описание проблемы
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Яндекс.Браузер имеет функцию Picture-in-Picture (PiP) для просмотра видео. При использовании iframe для воспроизведения на сторонних сайтах возникают ошибки, блокирующие просмотр видео или использование PiP.
 
-## Code scaffolding
+## Сервер для разработки (hot reloading)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Запустите команду `ng serve` и перейдите в браузере по адресу `http://localhost:4200/`.
 
-## Build
+## Сборка проекта
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Для сборки запустите `ng build`. Сгенерированные файлы сборки будут в директории `dist/`.
