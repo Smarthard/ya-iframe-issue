@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plain HTML iframe issue demo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    div.grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    iframe {
+      border: 1px solid gray;
+      width: calc(100% - 2px);
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <iframe src="https://video.sibnet.ru/shell.php?videoid=2984574"></iframe>
+    <iframe src="https://vk.com/video_ext.php?oid=-51321503&id=167612501&hash=0e93e71af1472428"></iframe>
+    <iframe src="http://www.myvi.top/embed/m476o1qht8cw7richwgnb5sswy"></iframe>
+    <iframe src="https://ok.ru/videoembed/1108234668763"></iframe>
+  </div>
+
+  <div>
+    <ul>
+      <li>
+        <a href="https://video.sibnet.ru/shell.php?videoid=2984574" target="_blank">
+          upper left
+        </a>
+        (video.sibnet.ru)
+      </li>
+      <li>
+        <a href="https://vk.com/video_ext.php?oid=-51321503&id=167612501&hash=0e93e71af1472428" target="_blank">
+          upper right
+        </a>
+        (vk.com)
+      </li>
+      <li>
+        <a href="https://video.sibnet.ru/shell.php?videoid=2984574" target="_blank">
+          bottom left
+        </a>
+        (myvi.top)
+      </li>
+      <li>
+        <a href="https://ok.ru/videoembed/1108234668763" target="_blank">
+          bottom right
+        </a>
+        (ok.ru)
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
