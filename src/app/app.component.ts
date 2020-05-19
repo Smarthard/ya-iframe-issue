@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
 import {fromEvent} from 'rxjs';
-import {debounceTime} from 'rxjs/operators';
+import {debounceTime, distinctUntilChanged, map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -21,8 +21,12 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     fromEvent(this.inputField.nativeElement, 'input')
-      .pipe(debounceTime(500))
-      .subscribe((evt) => this.url = (evt.target as HTMLInputElement).value);
+      .pipe(
+        map((evt) => (evt.target as HTMLInputElement).value),
+        distinctUntilChanged(),
+        debounceTime(500)
+      )
+      .subscribe((value: string) => this.url = value);
   }
 
   sanitizeUrl(url: string): SafeUrl {
