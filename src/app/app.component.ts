@@ -22,7 +22,7 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     fromEvent(this.inputField.nativeElement, 'input')
       .pipe(debounceTime(500))
-      .subscribe((evt) => this.url = evt.target.value);
+      .subscribe((evt) => this.url = (evt.target as HTMLInputElement).value);
   }
 
   sanitizeUrl(url: string): SafeUrl {
