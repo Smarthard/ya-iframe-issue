@@ -6,8 +6,7 @@
 <div>
   <mat-form-field>
     <mat-label>Video URL</mat-label>
-    <input [(ngModel)]="url"
-           name="url"
+    <input #urlInput
            type="url"
            matInput>
     <mat-error>Must be URL</mat-error>
