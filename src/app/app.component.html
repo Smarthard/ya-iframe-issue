@@ -1,15 +1,15 @@
 <div class="row-flex">
   <iframe [src]="sanitizeUrl(url)"
           allowfullscreen></iframe>
+</div>
 
-  <div>
-    <mat-form-field>
-      <mat-label>Video URL</mat-label>
-      <input [(ngModel)]="url"
-             name="url"
-             type="url"
-             matInput>
-      <mat-error>Must be URL</mat-error>
-    </mat-form-field>
-  </div>
+<div>
+  <mat-form-field>
+    <mat-label>Video URL</mat-label>
+    <input [(ngModel)]="url"
+           name="url"
+           type="url"
+           matInput>
+    <mat-error>Must be URL</mat-error>
+  </mat-form-field>
 </div>

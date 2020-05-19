@@ -1,20 +1,25 @@
 div.row-flex {
   display: flex;
   flex-direction: row;
-}
-
-div.row-flex div {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 iframe {
   width: 1280px;
   height: 720px;
+  border: 0;
 }
 
-mat-form-field, input {
+mat-form-field {
+  margin: 0 15px;
+  width: calc(100% - 30px);
+}
+
+input {
   width: 100%;
+}
+
+input {
+  padding-left: 15px;
 }
