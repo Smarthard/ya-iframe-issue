@@ -10,7 +10,7 @@ import {debounceTime, distinctUntilChanged, map} from 'rxjs/operators';
 })
 export class AppComponent implements AfterViewInit {
 
-  readonly DEFAULT_URL = 'https://video.sibnet.ru/shell.php?videoid=2984574';
+  readonly DEFAULT_URL = 'https://vk.com/video_ext.php?oid=-51321503&id=167612501&hash=0e93e71af1472428';
 
   @ViewChild('urlInput', { static: true })
   inputField: ElementRef<HTMLInputElement>;
