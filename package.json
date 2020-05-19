@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-builders/custom-webpack": "^9.1.0",
     "@angular/animations": "~9.1.6",
     "@angular/cdk": "^9.2.3",
     "@angular/common": "~9.1.6",
@@ -23,7 +24,8 @@
     "@angular/router": "~9.1.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "copy-webpack-plugin": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
